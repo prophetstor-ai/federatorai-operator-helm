@@ -1,0 +1,35 @@
+apiVersion: federatorai.containers.ai/v1alpha1
+kind: AlamedaService
+metadata:
+  name: my-alamedaservice
+  namespace: {{ .Release.Namespace }}
+  annotations:
+    "helm.sh/hook": post-install
+    "helm.sh/hook-weight": "3000"
+spec:
+  keycode:
+    codeNumber: FFSFM-RGBTF-F7I7O-UFKPM-LL6VI-QVFNQ
+  version: {{ .Values.alameda.version }}               ## for Federator.ai components
+{{ if .Values.alameda.imageLocation }}
+  imageLocation: {{ .Values.alameda.imageLocation }}
+{{ else }}
+  imageLocation: quay.io/prophetstor
+{{ end }} 
+  storages:                     ## see following details for where it is used in each component
+    - usage: log                ## storage setting for log
+      type: ephemeral           ## ephemeral means emptyDir{}
+    - usage: data
+      type: ephemeral
+#    - usage: data               ## storage setting for data
+#      type: pvc                 ## pvc means PersistentVolumeClaim
+#      size: 10Gi                ## mandatory when type=pvc
+#      class: "normal"           ## mandatory when type=pvc
+  serviceExposures:
+{{ if .Values.dashboard_frontend.nodePort }}
+  - name: federatorai-dashboard-frontend
+    nodePort:
+      ports:
+      - nodePort: {{ .Values.dashboard_frontend.nodePort }}
+        port: 9001
+    type: NodePort
+{{ end }}
