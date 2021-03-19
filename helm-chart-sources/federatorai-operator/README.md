@@ -65,8 +65,6 @@ The following table lists the configurable parameters of the chart and their def
 | `image.repository`                      | Image for Federator.ai operator               |
 | `image.tag`                             | Image Tag for Federator.ai operator           |
 | `alameda.version`                       | Image Tag for services                        |
-| `alameda.prometheusservice`             | Prometheus service endpoint                   |
-| `prometheus.enabled`                    | Deploy built-in prometheus chart              |
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
 
