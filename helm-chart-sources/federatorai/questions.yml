@@ -1,0 +1,40 @@
+rancher_min_version: 2.2.0
+questions:
+#image configurations
+- variable: defaultImage
+  default: true
+  description: "Use default Federator.ai image or specify a custom one"
+  label: Use Default Federator.ai Image
+  type: boolean
+  show_subquestion_if: false
+  group: "Container Images"
+  subquestions:
+  - variable: image.repository
+    default: "quay.io/prophetstor/federatorai-operator-ubi"
+    description: "Federator.ai Operator Image Name"
+    type: string
+    label: Federator.ai Operator Image Name
+  - variable: image.tag
+    default: "v4.5.0-b1510"
+    description: "Federator.ai Operator Image Tag"
+    type: string
+    label: Federator.ai Operator Sysdig Image Tag
+#service configurations
+- variable: alameda.version
+  default: "v4.5.0-b1510"
+  description: "Service containers image tag"
+  type: string
+  required: true
+  label: Alameda image location
+- variable: alameda.imageLocation
+  default: "v4.5.0-b1510"
+  description: "Service containers image tag"
+  type: string
+  required: true
+  label: Alameda imageLocation
+- variable: dashboard_frontend.nodePort
+  required: true
+  default: "31012"
+  description: "The port where the Federator.ai Dashboard listens to"
+  type: string
+  label: Federator.ai Dashboard Port

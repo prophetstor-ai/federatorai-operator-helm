@@ -40,12 +40,12 @@ Want more product information? Explore detailed information about using this pro
 
 ## Installing
 ```
-helm install --namespace federatorai federatorai-operator
+helm install --namespace federatorai federatorai
 ```
 
 ## Installing with the release name `my-name`:
 ```
-helm install --name `my-name` --namespace federatorai federatorai-operator
+helm install --name `my-name` --namespace federatorai federatorai
 ```
 
 ## To uninstall/delete the `my-name` deployment:
@@ -64,14 +64,16 @@ The following table lists the configurable parameters of the chart and their def
 | `image.pullPolicy`                      | Container pull policy                         |
 | `image.repository`                      | Image for Federator.ai operator               |
 | `image.tag`                             | Image Tag for Federator.ai operator           |
-| `alameda.version`                       | Image Tag for services                        |
+| `alameda.imageLocation`                 | Image Location for services containers        |
+| `alameda.version`                       | Image Tag for services containers             |
+| `dashboard_frontend.nodePort`           | Port of the Dashboard service                 |
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
 
 Alternatively, a YAML file that specifies the values for the parameters can be provided while installing the chart. For example,
 
 ```shell
-helm install --name `my-name` -f values.yaml federatorai-operator
+helm install --name `my-name` -f values.yaml federatorai
 ```
 
 > **Tip**: You can use the default [values.yaml](values.yaml)
