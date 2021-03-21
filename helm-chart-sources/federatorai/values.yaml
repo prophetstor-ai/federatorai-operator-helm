@@ -4,13 +4,13 @@
 ##
 image:
   pullPolicy: IfNotPresent
-  repository: quay.io/prophetstor/federatorai-operator-ubi
+  repository: repo.prophetservice.com/prophetstor/federatorai-operator-ubi
   tag: v4.5.0-b1510
 
 ## Set default values
 ##
 alameda:
-  imageLocation: quay.io/prophetstor
+  imageLocation: repo.prophetservice.com/prophetstor
   version: v4.5.0-b1510
 
 dashboard_frontend:

@@ -1,4 +1,4 @@
-rancher_min_version: 2.2.0
+#rancher_min_version: 2.2.0
 questions:
 #image configurations
 - variable: defaultImage
@@ -10,7 +10,7 @@ questions:
   group: "Container Images"
   subquestions:
   - variable: image.repository
-    default: "quay.io/prophetstor/federatorai-operator-ubi"
+    default: "repo.prophetservice.com/prophetstor/federatorai-operator-ubi"
     description: "Federator.ai Operator Image Name"
     type: string
     label: Federator.ai Operator Image Name
