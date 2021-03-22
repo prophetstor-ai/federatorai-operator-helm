@@ -64,8 +64,8 @@ The following table lists the configurable parameters of the chart and their def
 | `image.pullPolicy`                      | Container pull policy                         |
 | `image.repository`                      | Image for Federator.ai operator               |
 | `image.tag`                             | Image Tag for Federator.ai operator           |
-| `alameda.imageLocation`                 | Image Location for services containers        |
-| `alameda.version`                       | Image Tag for services containers             |
+| `federatorai.imageLocation`             | Image Location for services containers        |
+| `federatorai.version`                   | Image Tag for services containers             |
 | `dashboard_frontend.nodePort`           | Port of the Dashboard service                 |
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.

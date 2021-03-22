@@ -9,9 +9,9 @@ metadata:
 spec:
   keycode:
     codeNumber: FFSFM-RGBTF-F7I7O-UFKPM-LL6VI-QVFNQ
-  version: {{ .Values.alameda.version }}               ## for Federator.ai components
-{{ if .Values.alameda.imageLocation }}
-  imageLocation: {{ .Values.alameda.imageLocation }}
+  version: {{ .Values.federatorai.version }}               ## for Federator.ai components
+{{ if .Values.federatorai.imageLocation }}
+  imageLocation: {{ .Values.federatorai.imageLocation }}
 {{ else }}
   imageLocation: quay.io/prophetstor
 {{ end }} 

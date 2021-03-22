@@ -20,13 +20,13 @@ questions:
     type: string
     label: Federator.ai Operator Image Tag
 #service configurations
-- variable: alameda.imageLocation
+- variable: federatorai.imageLocation
   default: "repo.prophetservice.com/prophetstor"
   description: "Service containers image location"
   type: string
   required: true
-  label: Alameda imageLocation
-- variable: alameda.version
+  label: Federator.ai imageLocation
+- variable: federatorai.version
   default: "v4.5.0-b1510"
   description: "Service containers version"
   type: string

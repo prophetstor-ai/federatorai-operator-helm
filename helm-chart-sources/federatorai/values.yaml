@@ -9,7 +9,7 @@ image:
 
 ## Set default values
 ##
-alameda:
+federatorai:
   imageLocation: repo.prophetservice.com/prophetstor
   version: v4.5.0-b1510
 
