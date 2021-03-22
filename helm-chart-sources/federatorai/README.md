@@ -38,20 +38,25 @@ Want more product information? Explore detailed information about using this pro
 * [Federator.ai User Guide](https://www.prophetstor.com/wp-content/uploads/2021/01/Federator.ai-4.4-User-Guide.pdf)
 * [Company Information](https://www.prophetstor.com/)
 
-## Installing
+## Add Helm chart repository
 ```
-helm install --namespace federatorai federatorai
+helm repo add prophetstor https://prophetstor-ai.github.io/federatorai-operator-helm/
+```
+
+## Test the Helm chart repository
+```
+helm search repo federatorai
 ```
 
 ## Installing with the release name `my-name`:
 ```
-helm install --name `my-name` --namespace federatorai federatorai
+helm install `my-name` prophetstor/federatorai --namespace=federatorai --create-namespace
 ```
 
 ## To uninstall/delete the `my-name` deployment:
 ```
-helm ls --all
-helm delete `my-name`
+helm ls --all-namespaces
+helm delete `my-name` --namespace=federatorai
 ```
 
 
@@ -73,7 +78,7 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 Alternatively, a YAML file that specifies the values for the parameters can be provided while installing the chart. For example,
 
 ```shell
-helm install --name `my-name` -f values.yaml federatorai
+helm install `my-name` prophetstor/federatorai -f values.yaml --namespace=federatorai --create-namespace
 ```
 
 > **Tip**: You can use the default [values.yaml](values.yaml)

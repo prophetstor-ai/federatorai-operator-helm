@@ -7,8 +7,8 @@ webhooks:
 - clientConfig:
     caBundle: Cg==
     service:
-      name: federatorai-operator
-      namespace: federatorai
+      name: federatorai-operator-service
+      namespace: {{ .Release.Namespace }}
       path: /mutate-federatorai-containers-ai-v1alpha1-alamedaservice
   failurePolicy: Ignore
   name: alamedaservicemutate.federatorai.containers.ai
