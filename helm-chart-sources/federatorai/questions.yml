@@ -1,4 +1,4 @@
-#rancher_min_version: 2.2.0
+rancher_min_version: 2.2.0
 questions:
 #image configurations
 - variable: defaultImage
@@ -11,27 +11,27 @@ questions:
   subquestions:
   - variable: image.repository
     default: "repo.prophetservice.com/prophetstor/federatorai-operator-ubi"
-    description: "Federator.ai Operator Image Name"
+    description: "Federator.ai Operator image name"
     type: string
     label: Federator.ai Operator Image Name
   - variable: image.tag
     default: "v4.5.0-b1510"
-    description: "Federator.ai Operator Image Tag"
+    description: "Federator.ai Operator image tag"
     type: string
-    label: Federator.ai Operator Sysdig Image Tag
+    label: Federator.ai Operator Image Tag
 #service configurations
-- variable: alameda.version
-  default: "v4.5.0-b1510"
-  description: "Service containers image tag"
-  type: string
-  required: true
-  label: Alameda image location
 - variable: alameda.imageLocation
-  default: "v4.5.0-b1510"
-  description: "Service containers image tag"
+  default: "repo.prophetservice.com/prophetstor"
+  description: "Service containers image location"
   type: string
   required: true
   label: Alameda imageLocation
+- variable: alameda.version
+  default: "v4.5.0-b1510"
+  description: "Service containers version"
+  type: string
+  required: true
+  label: Service Containers Image Tag
 - variable: dashboard_frontend.nodePort
   required: true
   default: "31012"
