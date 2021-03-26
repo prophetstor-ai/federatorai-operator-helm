@@ -5,15 +5,37 @@
 image:
   pullPolicy: IfNotPresent
   repository: repo.prophetservice.com/prophetstor/federatorai-operator-ubi
-  tag: v4.5.0-b1514
+  tag: v4.5.0-b1515
 
 ## Set default values
 ##
 federatorai:
   imageLocation: repo.prophetservice.com/prophetstor
-  version: v4.5.0-b1514
+  version: v4.5.0-b1515
+  ## If thhe persistence is enabled, a default StorageClass
+  ## is needed in the k8s cluster to provision volumes.
+  persistence:
+    enabled: false
+    storageClass: ""
+    storages:
+      logStorage:
+        size: 2Gi
+    aiCore:
+      dataStorage:
+        size: 10Gi
+    influxdb:
+      dataStorage:
+        size: 100Gi
+    fedemeterInfluxdb:
+      dataStorage:
+        size: 10Gi
 
-dashboard_frontend:
-  ## Specify the nodePort value for the dashboard frontend
-  ## Comment out the following line to disable nodePort service
-  nodePort: 31012
+services:
+  dashboardFrontend:
+    ## Specify the nodePort value for the dashboard frontend
+    ## Comment out the following line to disable nodePort service
+    nodePort: 31012
+  rest:
+    ## Specify the nodePort value for the REST service
+    ## Comment out the following line to disable nodePort service
+    nodePort: 31011

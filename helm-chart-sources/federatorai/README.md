@@ -69,14 +69,21 @@ helm delete `my-name` --namespace=federatorai
 
 The following table lists the configurable parameters of the chart and their default values are specfied insde values.yaml.
 
-| Parameter                               | Description                                   |
-| ----------------------------------------| --------------------------------------------- |
-| `image.pullPolicy`                      | Container pull policy                         |
-| `image.repository`                      | Image for Federator.ai operator               |
-| `image.tag`                             | Image Tag for Federator.ai operator           |
-| `federatorai.imageLocation`             | Image Location for services containers        |
-| `federatorai.version`                   | Image Tag for services containers             |
-| `dashboard_frontend.nodePort`           | Port of the Dashboard service                 |
+| Parameter                                                      | Description                                   |
+| -------------------------------------------------------------- | --------------------------------------------- |
+| `image.pullPolicy`                                             | Container pull policy                         |
+| `image.repository`                                             | Image for Federator.ai operator               |
+| `image.tag`                                                    | Image Tag for Federator.ai operator           |
+| `federatorai.imageLocation`                                    | Image Location for services containers        |
+| `federatorai.version`                                          | Image Tag for services containers             |
+| `federatorai.persistence.enabled`                              | Enable persistent volumes                     |
+| `federatorai.persistence.storageClass`                         | Storage Class Name of persistent volumes      |
+| `federatorai.persistence.storages.logStorage.size`             | Log volume size                               |
+| `federatorai.persistence.aiCore.dataStorage.size`              | AICore data volume size                       |
+| `federatorai.persistence.influxdb.dataStorage.size`            | Influxdb data volume size                     |
+| `federatorai.persistence.fedemeterInfluxdb.dataStorage.size`   | Fedemeter influxdb data volume size           |
+| `services.dashboardFrontend.nodePort`                          | Port of the Dashboard service                 |
+| `services.rest.nodePort`                                       | Port of the REST service                      |
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
 
