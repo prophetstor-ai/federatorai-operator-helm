@@ -39,7 +39,7 @@ Want more product information? Explore detailed information about using this pro
 * [Company Information](https://www.prophetstor.com/)
 
 ## Prerequisites
--  The [Kubernetes](https://kubernetes.io/) version 1.11 or later if using Kubernetes environment.
+-  The [Kubernetes](https://kubernetes.io/) version 1.18 or later if using Kubernetes environment.
 -  The [Openshift](https://www.openshift.com) version 4.x.x or later if using OpenShift platform.
 -  The [Helm](https://helm.sh/) version is 3.x.x or later.
 
