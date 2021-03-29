@@ -7,8 +7,8 @@ metadata:
     "helm.sh/hook": post-install
     "helm.sh/hook-weight": "3000"
 spec:
-  env:
 {{ if .Values.federatorai.persistence.enabled }}
+  env:
   - name: FEDERATORAI_MAXIMUM_LOG_SIZE
     ## Use about 90% of 2Gi
     value: "1931476992"
