@@ -15,7 +15,7 @@ questions:
     type: string
     label: Federator.ai Operator Image Name
   - variable: image.tag
-    default: "v4.5.0-b1515"
+    default: "v4.5.1-b1557"
     description: "Federator.ai Operator image tag"
     type: string
     label: Federator.ai Operator Image Tag
@@ -27,7 +27,7 @@ questions:
   required: true
   label: Federator.ai imageLocation
 - variable: federatorai.version
-  default: "v4.5.0-b1515"
+  default: "v4.5.1-b1557"
   description: "Service containers version"
   type: string
   required: true
