@@ -10,7 +10,7 @@ questions:
   group: "Container Images"
   subquestions:
   - variable: image.repository
-    default: "repo.prophetservice.com/prophetstor/federatorai-operator-ubi"
+    default: "quay.io/prophetstor/federatorai-operator-ubi"
     description: "Federator.ai Operator image name"
     type: string
     label: Federator.ai Operator Image Name
@@ -21,7 +21,7 @@ questions:
     label: Federator.ai Operator Image Tag
 #service configurations
 - variable: federatorai.imageLocation
-  default: "repo.prophetservice.com/prophetstor"
+  default: "quay.io/prophetstor"
   description: "Service containers image location"
   type: string
   required: true

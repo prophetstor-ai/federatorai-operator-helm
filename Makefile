@@ -17,3 +17,4 @@ clobber: clean
 
 clean:
 	@rm -rfv *~ $(TMP_DIR)
+	@find $(SOURCE_ROOT) -name "*~" | while read fn; do rm -v $${fn}; done
