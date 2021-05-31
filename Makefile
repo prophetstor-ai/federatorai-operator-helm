@@ -18,3 +18,15 @@ clobber: clean
 clean:
 	@rm -rfv *~ $(TMP_DIR)
 	@find $(SOURCE_ROOT) -name "*~" | while read fn; do rm -v $${fn}; done
+
+test-server:
+	@set -x; [ "${SERVER_HTTP}" = "" ] && export SERVER_HTTP=28080; \
+	[ "${SERVER_HTTPS}" = "" ] && export SERVER_HTTPS=28443; set ; \
+	/bin/echo -e "\nServer start on http port $${SERVER_HTTP} and https port $${SERVER_HTTPS}."; \
+	/bin/echo -e "You can add helm repository with the following command."; \
+	/bin/echo -e "  helm repo add prophetstor http://<my_server_ip>:$${SERVER_HTTP}/\n\n"; \
+	docker run --rm -it \
+	    -p $${SERVER_HTTP}:80 \
+	    -p $${SERVER_HTTPS}:443 \
+	    -v "`pwd`:/data" \
+	    repo.prophetservice.com/nginx-here

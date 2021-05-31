@@ -28,7 +28,7 @@ spec:
   storages:
   - accessModes:
     - ReadWriteOnce
-    class: {{ .Values.federatorai.persistence.storageClass }}
+    class: {{ required "A valid .Values.federatorai.persistence.storageClass entry required!" .Values.federatorai.persistence.storageClass }}
     size: {{ .Values.federatorai.persistence.storages.logStorage.size }}
     type: pvc
     usage: log
@@ -36,7 +36,7 @@ spec:
     storages:
     - accessModes:
       - ReadWriteOnce
-      class: {{ .Values.federatorai.persistence.storageClass }}
+      class: {{ required "A valid .Values.federatorai.persistence.storageClass entry required!" .Values.federatorai.persistence.storageClass }}
       size: {{ .Values.federatorai.persistence.aiCore.dataStorage.size }}
       type: pvc
       usage: data
@@ -44,7 +44,7 @@ spec:
     storages:
     - accessModes:
       - ReadWriteOnce
-      class: {{ .Values.federatorai.persistence.storageClass }}
+      class: {{ required "A valid .Values.federatorai.persistence.storageClass entry required!" .Values.federatorai.persistence.storageClass }}
       size: {{ .Values.federatorai.persistence.influxdb.dataStorage.size }}
       type: pvc
       usage: data
@@ -52,7 +52,7 @@ spec:
     storages:
     - accessModes:
       - ReadWriteOnce
-      class: {{ .Values.federatorai.persistence.storageClass }}
+      class: {{ required "A valid .Values.federatorai.persistence.storageClass entry required!" .Values.federatorai.persistence.storageClass }}
       size: {{ .Values.federatorai.persistence.fedemeterInfluxdb.dataStorage.size }}
       type: pvc
       usage: data

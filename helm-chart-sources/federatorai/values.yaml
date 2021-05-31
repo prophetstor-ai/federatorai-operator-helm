@@ -15,7 +15,7 @@ federatorai:
   ## If thhe persistence is enabled, a default StorageClass
   ## is needed in the k8s cluster to provision volumes.
   persistence:
-    enabled: false
+    enabled: true
     storageClass: ""
     storages:
       logStorage:

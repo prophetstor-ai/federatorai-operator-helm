@@ -45,7 +45,7 @@ questions:
   type: string
   label: Federator.ai REST Port
 - variable: federatorai.persistence.enabled
-  default: false
+  default: true
   description: "Enable persistent volume for Federator.ai"
   type: boolean
   required: true
