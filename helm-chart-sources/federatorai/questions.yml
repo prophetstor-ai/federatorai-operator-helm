@@ -58,7 +58,6 @@ questions:
     description: "If undefined or set to null, using the default storageClass. Defaults to null."
     type: storageclass
     label: Storage Class for Federator.ai
-    required: true
   - variable: federatorai.persistence.storages.logStorage.size
     default: "2Gi"
     description: "Log volume size"
