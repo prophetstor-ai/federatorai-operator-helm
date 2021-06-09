@@ -5,6 +5,7 @@ kind: CustomResourceDefinition
 metadata:
   annotations:
     controller-gen.kubebuilder.io/version: v0.4.1
+    helm.sh/hook: crd-install
   creationTimestamp: null
   name: alamedaservices.federatorai.containers.ai
 spec:
