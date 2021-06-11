@@ -252,5 +252,6 @@ kind: ClusterRole
 metadata:
   name: alameda-gc
   annotations:
-    "helm.sh/hook": post-delete,pre-install
+    "helm.sh/hook-weight": "5000"
+    "helm.sh/hook": post-install,post-delete
 rules: []
