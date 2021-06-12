@@ -3,9 +3,9 @@ entries:
   federatorai:
   - apiVersion: v1
     appVersion: 4.5.1-ga
-    created: "2021-06-11T07:24:44.28097771Z"
+    created: "2021-06-12T00:36:42.835284364Z"
     description: Federator.ai helps enterprises optimize cloud resources, maximize application performance, and save significant cost without excessive over-provisioning or under-provisioning of resources, meeting the service-level requirements of their applications.
-    digest: ead9d5caa1a0c3a0cb15e76adfb0dd52d4d5370599209e68dd8df693d454b6d5
+    digest: 09be416cae31ee47b2c1ee46dc3091bec2425d7ddb3d68915fc5cd5bf923b68b
     home: https://www.prophetstor.com
     icon: https://raw.githubusercontent.com/prophetstor-ai/public/master/images/logo.png
     keywords:
@@ -24,4 +24,4 @@ entries:
     urls:
     - federatorai-4.5.1.tgz
     version: 4.5.1
-generated: "2021-06-11T07:24:44.277962784Z"
+generated: "2021-06-12T00:36:42.831566009Z"
