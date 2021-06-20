@@ -33,9 +33,10 @@ Predefined custom Datadog/Sysdig Dashboards for workload prediction/recommendati
 
 Want more product information? Explore detailed information about using this product and where to find additional help.
 
-* [Federator.ai Datasheet](https://www.prophetstor.com/wp-content/uploads/2021/02/Federator.ai%C2%AE_202102ver.pdf)
-* [Quick Start Guide](https://www.prophetstor.com/wp-content/uploads/2021/04/ProphetStor-Federator.ai-v4.5.1-Quick-Installation-Guide.pdf)
-* [Federator.ai User Guide](https://www.prophetstor.com/wp-content/uploads/2021/04/Federator.ai-4.5.1-User-Guide.pdf)
+* [Federator.ai Datasheet](https://www.prophetstor.com/wp-content/uploads/datasheets/Federator.ai.pdf)
+* [Quick Start Guide](https://prophetstor.com/wp-content/uploads/2021/06/ProphetStor-Federator.ai-v4.6.0-Quick-Installation-Guide.pdf)
+* [Installation Guide] (https://prophetstor.com/wp-content/uploads/2021/06/ProphetStor-Federator.ai-v4.6.0-Installation-Guide-v1.0.pdf)
+* [Federator.ai User Guide](https://prophetstor.com/wp-content/uploads/2021/05/Federator.ai-4.6-User-Guide.pdf)
 * [Company Information](https://www.prophetstor.com/)
 
 ## Prerequisites
