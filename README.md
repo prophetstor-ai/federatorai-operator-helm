@@ -65,6 +65,11 @@ helm ls --all-namespaces
 helm delete `my-name` --namespace=federatorai
 ```
 
+## To delete the Custom Resource Definitions (CRDs):
+```
+kubectl delete crd alamedaservices.federatorai.containers.ai
+```
+
 
 ## Configuration
 
