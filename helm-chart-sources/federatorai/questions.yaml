@@ -15,7 +15,7 @@ questions:
     group: "Container Images"
     label: Federator.ai Operator Image Name
   - variable: image.tag
-    default: "v4.6.0-ga"
+    default: "v4.6.1-ga"
     description: "Federator.ai Operator image tag"
     type: string
     group: "Container Images"
@@ -29,7 +29,7 @@ questions:
   group: "Container Images"
   label: Federator.ai imageLocation
 - variable: federatorai.version
-  default: "v4.6.0-ga"
+  default: "v4.6.1-ga"
   description: "Service containers version"
   type: string
   required: true
