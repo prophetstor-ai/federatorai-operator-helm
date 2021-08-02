@@ -3,9 +3,9 @@ entries:
   federatorai:
   - apiVersion: v1
     appVersion: 4.6.1-ga
-    created: "2021-08-02T09:54:32.128884859+08:00"
+    created: "2021-08-02T11:05:17.036552572+08:00"
     description: Federator.ai helps enterprises optimize cloud resources, maximize application performance, and save significant cost without excessive over-provisioning or under-provisioning of resources, meeting the service-level requirements of their applications.
-    digest: a3746cfb936135d89c9af50b518dcf8b66f83a2bd32133ff77ecde39dff3293b
+    digest: ce45d8d985645f0b6e02452e10c4864af84c5d66025fa10f6080ffaa3c5387f7
     home: https://www.prophetstor.com
     icon: https://raw.githubusercontent.com/prophetstor-ai/public/master/images/logo.png
     keywords:
@@ -26,7 +26,7 @@ entries:
     version: 4.6.1
   - apiVersion: v1
     appVersion: 4.6.0-ga
-    created: "2021-08-02T09:54:32.126431134+08:00"
+    created: "2021-08-02T11:05:17.033428922+08:00"
     description: Federator.ai helps enterprises optimize cloud resources, maximize application performance, and save significant cost without excessive over-provisioning or under-provisioning of resources, meeting the service-level requirements of their applications.
     digest: e87c95a8cb4d2d4681c10174af34b87d2d08628324b29c4e83f5f3961f55dd97
     home: https://www.prophetstor.com
@@ -49,7 +49,7 @@ entries:
     version: 4.6.0
   - apiVersion: v1
     appVersion: 4.5.1-ga
-    created: "2021-08-02T09:54:32.12204722+08:00"
+    created: "2021-08-02T11:05:17.028380827+08:00"
     description: Federator.ai helps enterprises optimize cloud resources, maximize application performance, and save significant cost without excessive over-provisioning or under-provisioning of resources, meeting the service-level requirements of their applications.
     digest: 958662e0cbe9476fb652e91f6642ece5f2bee12c92d4c6baf167c3bed435b5a1
     home: https://www.prophetstor.com
@@ -70,4 +70,4 @@ entries:
     urls:
     - federatorai-4.5.1.tgz
     version: 4.5.1
-generated: "2021-08-02T09:54:32.119349481+08:00"
+generated: "2021-08-02T11:05:17.024698581+08:00"
