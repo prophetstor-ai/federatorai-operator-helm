@@ -10,6 +10,7 @@ keywords:
 - AIOps
 - Intelligent Workload Management
 - Cost Optimization
+kubeVersion: '>=1.12.0-0'
 maintainers:
 - email: support@prophetstor.com
   name: ProphetStor Data Services, Inc.
