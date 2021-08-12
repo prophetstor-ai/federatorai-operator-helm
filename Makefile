@@ -10,7 +10,6 @@ all: build
 
 build:
 	@set -e; \
-	$(HELM_CMD) package helm-chart-sources/*; \
 	$(HELM_CMD) repo index .
 
 clobber: clean

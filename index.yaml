@@ -3,9 +3,9 @@ entries:
   federatorai:
   - apiVersion: v1
     appVersion: 4.6.1-ga
-    created: "2021-08-10T11:56:33.127237816+08:00"
+    created: "2021-08-12T10:00:04.236136507+08:00"
     description: Federator.ai helps enterprises optimize cloud resources, maximize application performance, and save significant cost without excessive over-provisioning or under-provisioning of resources, meeting the service-level requirements of their applications.
-    digest: 4c7f59dded55140d54885ff72b3897d559fbb318579ac98915e159b4df973440
+    digest: 4728d5d831684af28926817eb83f1b82ddeab4d71e0cdcfe09039679a2a490fd
     home: https://www.prophetstor.com
     icon: https://raw.githubusercontent.com/prophetstor-ai/public/master/images/logo.png
     keywords:
@@ -15,7 +15,7 @@ entries:
     - AIOps
     - Intelligent Workload Management
     - Cost Optimization
-    kubeVersion: '>=1.12.0-0'
+    kubeVersion: 1.11 - 1.21
     maintainers:
     - email: support@prophetstor.com
       name: ProphetStor Data Services, Inc.
@@ -27,7 +27,7 @@ entries:
     version: 4.6.1
   - apiVersion: v1
     appVersion: 4.6.0-ga
-    created: "2021-08-10T11:56:33.124705517+08:00"
+    created: "2021-08-12T10:00:04.233717949+08:00"
     description: Federator.ai helps enterprises optimize cloud resources, maximize application performance, and save significant cost without excessive over-provisioning or under-provisioning of resources, meeting the service-level requirements of their applications.
     digest: e87c95a8cb4d2d4681c10174af34b87d2d08628324b29c4e83f5f3961f55dd97
     home: https://www.prophetstor.com
@@ -50,7 +50,7 @@ entries:
     version: 4.6.0
   - apiVersion: v1
     appVersion: 4.5.1-ga
-    created: "2021-08-10T11:56:33.121142962+08:00"
+    created: "2021-08-12T10:00:04.231228257+08:00"
     description: Federator.ai helps enterprises optimize cloud resources, maximize application performance, and save significant cost without excessive over-provisioning or under-provisioning of resources, meeting the service-level requirements of their applications.
     digest: 958662e0cbe9476fb652e91f6642ece5f2bee12c92d4c6baf167c3bed435b5a1
     home: https://www.prophetstor.com
@@ -71,4 +71,4 @@ entries:
     urls:
     - federatorai-4.5.1.tgz
     version: 4.5.1
-generated: "2021-08-10T11:56:33.115598785+08:00"
+generated: "2021-08-12T10:00:04.227322493+08:00"
