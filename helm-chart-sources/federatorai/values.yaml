@@ -5,13 +5,13 @@
 image:
   pullPolicy: IfNotPresent
   repository: quay.io/prophetstor/federatorai-operator-ubi
-  tag: v4.6.1-ga
+  tag: v4.7.0-b1725
 
 ## Set default values
 ##
 federatorai:
   imageLocation: quay.io/prophetstor
-  version: v4.6.1-ga
+  version: v4.7.0-b1725
   ## If thhe persistence is enabled, a default StorageClass
   ## is needed in the k8s cluster to provision volumes.
   persistence:

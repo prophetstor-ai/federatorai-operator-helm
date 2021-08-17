@@ -32,5 +32,5 @@ test-server:
 	    repo.prophetservice.com/nginx-here
 
 upload-repo:
-	tgz_file=federatorai-4.6.0.tgz; \
+	tgz_file=federatorai-4.7.0.tgz; \
 	curl -v -u builder:password http://repo.prophetservice.com:8081/repository/charts/ --upload-file $${tgz_file}

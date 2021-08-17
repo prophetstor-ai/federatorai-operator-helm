@@ -35,12 +35,13 @@ Want more product information? Explore detailed information about using this pro
 
 * [Federator.ai Datasheet](https://prophetstor.com/wp-content/uploads/datasheets/Federator.ai.pdf)
 * [Quick Start Guide](https://prophetstor.com/wp-content/uploads/documentation/Federator.ai/Latest%20Version/ProphetStor%20Federator.ai%20Quick%20Installation%20Guide.pdf)
-* [Installation Guide](https://prophetstor.com/wp-content/uploads/2021/07/ProphetStor-Federator.ai-v4.6.1-Installation-Guide-v1.0.pdf)
-* [User Guide](https://prophetstor.com/wp-content/uploads/2021/07/Federator.ai-4.6.1-User-Guide.pdf)
+* [Installation Guide](https://prophetstor.com/wp-content/uploads/2021/08/ProphetStor-Federator.ai-v4.7.0-Installation-Guide-v1.0.pdf)
+* [User Guide](https://prophetstor.com/wp-content/uploads/2021/08/Federator.ai-4.7.0-User-Guide.pdf)
+* [Release Notes](https://prophetstor.com/wp-content/uploads/2021/08/Federator.ai-4.7.0-Release-Notes.pdf)
 * [Company Information](https://www.prophetstor.com/)
 
 ## Prerequisites
--  The [Kubernetes](https://kubernetes.io/) version 1.18 or later if using Kubernetes environment.
+-  The [Kubernetes](https://kubernetes.io/) version 1.16 or later if using Kubernetes environment.
 -  The [Openshift](https://www.openshift.com) version 4.x.x or later if using OpenShift platform.
 -  The [Helm](https://helm.sh/) version is 3.x.x or later.
 
