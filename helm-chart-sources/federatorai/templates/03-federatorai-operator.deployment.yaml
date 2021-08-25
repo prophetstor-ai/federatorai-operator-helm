@@ -73,6 +73,8 @@ spec:
                   fieldPath: metadata.name
             - name: OPERATOR_NAME
               value: "federatorai-operator"
+            - name: OVERRIDE_CR_VERSION
+              value: "true"
             - name: DISABLE_OPERAND_RESOURCE_PROTECTION
               value: "false"
           readinessProbe:
