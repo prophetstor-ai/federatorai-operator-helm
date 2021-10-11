@@ -2,8 +2,35 @@ apiVersion: v1
 entries:
   federatorai:
   - apiVersion: v1
+    appVersion: 4.7.1-ga
+    created: "2021-10-11T21:25:11.986199187+08:00"
+    description: Federator.ai helps enterprises optimize cloud resources, maximize
+      application performance, and save significant cost without excessive over-provisioning
+      or under-provisioning of resources, meeting the service-level requirements of
+      their applications.
+    digest: fe78ff227ff8cd143018b20dfe31239d7c63fde81a79a24be66344dbcf0fe31d
+    home: https://www.prophetstor.com
+    icon: https://raw.githubusercontent.com/prophetstor-ai/public/master/images/logo.png
+    keywords:
+    - AI
+    - Resource Orchestration
+    - NoOps
+    - AIOps
+    - Intelligent Workload Management
+    - Cost Optimization
+    kubeVersion: 1.16 - 1.22
+    maintainers:
+    - email: support@prophetstor.com
+      name: ProphetStor Data Services, Inc.
+    name: federatorai
+    sources:
+    - https://www.prophetstor.com
+    urls:
+    - federatorai-4.7.1.tgz
+    version: 4.7.1
+  - apiVersion: v1
     appVersion: 4.7.0-ga
-    created: "2021-10-08T15:21:29.506996698+08:00"
+    created: "2021-10-11T21:25:11.980979163+08:00"
     description: Federator.ai helps enterprises optimize cloud resources, maximize
       application performance, and save significant cost without excessive over-provisioning
       or under-provisioning of resources, meeting the service-level requirements of
@@ -30,7 +57,7 @@ entries:
     version: 4.7.0
   - apiVersion: v1
     appVersion: 4.6.1-ga
-    created: "2021-10-08T15:21:29.504699695+08:00"
+    created: "2021-10-11T21:25:11.977951293+08:00"
     description: Federator.ai helps enterprises optimize cloud resources, maximize
       application performance, and save significant cost without excessive over-provisioning
       or under-provisioning of resources, meeting the service-level requirements of
@@ -57,7 +84,7 @@ entries:
     version: 4.6.1
   - apiVersion: v1
     appVersion: 4.6.0-ga
-    created: "2021-10-08T15:21:29.502315711+08:00"
+    created: "2021-10-11T21:25:11.974796233+08:00"
     description: Federator.ai helps enterprises optimize cloud resources, maximize
       application performance, and save significant cost without excessive over-provisioning
       or under-provisioning of resources, meeting the service-level requirements of
@@ -83,7 +110,7 @@ entries:
     version: 4.6.0
   - apiVersion: v1
     appVersion: 4.5.1-ga
-    created: "2021-10-08T15:21:29.499965694+08:00"
+    created: "2021-10-11T21:25:11.970637365+08:00"
     description: Federator.ai helps enterprises optimize cloud resources, maximize
       application performance, and save significant cost without excessive over-provisioning
       or under-provisioning of resources, meeting the service-level requirements of
@@ -107,4 +134,4 @@ entries:
     urls:
     - federatorai-4.5.1.tgz
     version: 4.5.1
-generated: "2021-10-08T15:21:29.486723252+08:00"
+generated: "2021-10-11T21:25:11.967377432+08:00"
