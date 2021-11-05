@@ -29,6 +29,13 @@ With resource usage prediction, Federator.ai analyzes potential cost of a cluste
 Predefined custom Datadog/Sysdig Dashboards for workload prediction/recommendation visualization for cluster nodes and applications.
 
 
+**SUSE/Rancher Marketplace**
+
+Federator.ai can also be directly installed from SUSE/Rancher Marketplace. Please see the following how-to video for the installation procedure.
+
+https://www.youtube.com/watch?v=mBAPCCAH8kg
+
+
 **Additional resources**
 
 Want more product information? Explore detailed information about using this product and where to find additional help.
@@ -36,8 +43,8 @@ Want more product information? Explore detailed information about using this pro
 * [Federator.ai Datasheet](https://prophetstor.com/wp-content/uploads/datasheets/Federator.ai.pdf)
 * [Quick Start Guide](https://prophetstor.com/wp-content/uploads/documentation/Federator.ai/Latest%20Version/ProphetStor%20Federator.ai%20Quick%20Installation%20Guide.pdf)
 * [Installation Guide](https://prophetstor.com/wp-content/uploads/2021/08/ProphetStor-Federator.ai-v4.7.0-Installation-Guide-v1.0.pdf)
-* [User Guide](https://prophetstor.com/wp-content/uploads/2021/08/Federator.ai-4.7.0-User-Guide.pdf)
-* [Release Notes](https://prophetstor.com/wp-content/uploads/2021/08/Federator.ai-4.7.0-Release-Notes.pdf)
+* [User Guide](https://prophetstor.com/wp-content/uploads/2021/11/Federator.ai-User-Guide-4.7.2.pdf)
+* [Release Notes](https://prophetstor.com/wp-content/uploads/2021/11/Federator.ai-4.7.2-Release-Notes.pdf)
 * [Company Information](https://www.prophetstor.com/)
 
 ## Prerequisites
