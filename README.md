@@ -42,9 +42,9 @@ Want more product information? Explore detailed information about using this pro
 
 * [Federator.ai Datasheet](https://www.prophetstor.com/wp-content/uploads/datasheets/Federator.ai.pdf)
 * [Quick Start Guide](https://prophetstor.com/wp-content/uploads/documentation/Federator.ai/Latest%20Version/ProphetStor%20Federator.ai%20Quick%20Installation%20Guide.pdf)
-* [Installation Guide](https://prophetstor.com/wp-content/uploads/2022/01/ProphetStor-Federator.ai-v5.0-Installation-Guide.pdf)
-* [User Guide](https://prophetstor.com/wp-content/uploads/2022/01/Federator.ai-5.0-User-Guide.pdf)
-* [Release Notes](https://prophetstor.com/wp-content/uploads/2022/01/Federator.ai-5.0-Release-Notes.pdf)
+* [Installation Guide](https://prophetstor.com/wp-content/uploads/2022/05/ProphetStor-Federator.ai-v5.1-Installation-Guide.pdf)
+* [User Guide](https://prophetstor.com/wp-content/uploads/2022/05/Federator.ai-5.1-User-Guide.pdf)
+* [Release Notes](https://prophetstor.com/wp-content/uploads/2022/05/Federator.ai-5.1-Release-Notes.pdf)
 * [Company Information](https://www.prophetstor.com/)
 
 ## Prerequisites
@@ -80,23 +80,81 @@ kubectl delete crd alamedaservices.federatorai.containers.ai
 
 ## Configuration
 
-The following table lists the configurable parameters of the chart and their default values are specfied insde values.yaml.
+The following table lists some of the configurable parameters of the chart.
+Their default values and other configurable parameters are specified inside values.yaml.
 
-| Parameter                                                        | Description                                   |
-| ---------------------------------------------------------------- | --------------------------------------------- |
-| `image.pullPolicy`                                               | Container pull policy                         |
-| `image.repository`                                               | Image for Federator.ai operator               |
-| `image.tag`                                                      | Image Tag for Federator.ai operator           |
-| `federatorai.imageLocation`                                      | Image Location for services containers        |
-| `federatorai.persistence.enabled`                                | Enable persistent volumes                     |
-| `federatorai.persistence.storageClass`                           | Storage Class Name of persistent volumes      |
-| `federatorai.persistence.storages.logStorage.size`               | Log volume size                               |
-| `federatorai.persistence.aiCore.dataStorage.size`                | AICore data volume size                       |
-| `federatorai.persistence.influxdb.dataStorage.size`              | Influxdb data volume size                     |
-| `federatorai.persistence.fedemeterInfluxdb.dataStorage.size`     | Fedemeter influxdb data volume size           |
-| `federatorai.persistence.federatoraiPostgreSQL.dataStorage.size` | PostgreSQL data volume size                   |
-| `services.dashboardFrontend.nodePort`                            | Port of the Dashboard service                 |
-| `services.rest.nodePort`                                         | Port of the REST service                      |
+## Parameters
+
+### Global parameters
+
+| Parameter                                                      | Description                                      |
+| -------------------------------------------------------------- | ------------------------------------------------ |
+| global.imageRegistry                                           | Image registry                                                                                                                     |
+| global.imageTag                                                | Image tag of Federator.ai                                                                                                          |
+| global.imagePullPolicy                                         | Specify a imagePullPolicy                                                                                                          |
+| global.imagePullSecrets                                        | Optionally specify an array of imagePullSecrets.                                                                                   |
+| global.storageClassName                                        | Persistent Volume Storage Class                                                                                                    |
+| global.commonAnnotations                                       | Common annotations to be added to resources                                                                                        |
+| global.commonLabels                                            | Common labels to be added to resources                                                                                             |
+| global.podAnnotations                                          | Annotations to be added to pods                                                                                                    |
+| global.podLabels                                               | Labels to be added to pods                                                                                                         |
+| global.resourcesEnabled                                        | Boolean to specify if you want to apply resources limits/requests settings                                                         |
+
+
+### alamedaAi Parameters
+
+| Parameter                                                      | Description                                      |
+| -------------------------------------------------------------- | ------------------------------------------------ |
+| alamedaAi.persistence.dataStorageSize                          | Persistence storage size for data volume                                                                                           |
+
+
+### alamedaInfluxdb Parameters
+
+| Parameter                                                      | Description                                      |
+| -------------------------------------------------------------- | ------------------------------------------------ |
+| alamedaInfluxdb.persistence.dataStorageSize                    | Persistence storage size for data volume                                                                                           |
+
+
+### fedemeterInfluxdb Parameters
+
+| Parameter                                                      | Description                                      |
+| -------------------------------------------------------------- | ------------------------------------------------ |
+| fedemeterInfluxdb.persistence.dataStorageSize                  | Persistence storage size for data volume                                                                                           |
+
+
+### federatoraiDashboardFrontend Parameters
+
+| Parameter                                                      | Description                                      |
+| -------------------------------------------------------------- | ------------------------------------------------ |
+| federatoraiDashboardFrontend.ingress.enabled                   | Enable ingress controller resource                                                                                                 |
+| federatoraiDashboardFrontend.ingress.pathType                  | Ingress Path type                                                                                                                  |
+| federatoraiDashboardFrontend.ingress.hostname                  | Default host for the ingress resource                                                                                              |
+| federatoraiDashboardFrontend.ingress.path                      | The Path to REST. You may need to set this to '/*' in order to use this with ALB ingress controllers                               |
+| federatoraiDashboardFrontend.ingress.annotations               | Additional annotations for the Ingress resource. To enable certificate autogeneration, place here your cert-manager annotations.   |
+| federatoraiDashboardFrontend.ingress.ingressClassName          | IngressClass that will be be used to implement the Ingress (Kubernetes 1.18+)                                                      |
+| federatoraiDashboardFrontend.ingress.tls                       | Enable TLS configuration for the hostname defined at federatoraiDashboardFrontend.ingress.hostname parameter                       |
+| federatoraiDashboardFrontend.ingress.extraHosts                | The list of additional hostnames to be covered with this ingress record.                                                           |
+| federatoraiDashboardFrontend.ingress.extraPaths                | Additional arbitrary path/backend objects                                                                                          |
+| federatoraiDashboardFrontend.ingress.extraTls                  | The tls configuration for additional hostnames to be covered with this ingress record.                                             |
+| federatoraiDashboardFrontend.ingress.secrets                   | If you're providing your own certificates, please use this to add the certificates as secrets                                      |
+| federatoraiDashboardFrontend.service.type                      | Kubernetes service type, valid value: LoadBalancer, NodePort                                                                       |
+| federatoraiDashboardFrontend.service.port                      | Public service port                                                                                                                |
+| federatoraiDashboardFrontend.service.targetPort                | Container port of services, use 9000 for accessing over HTTP and 9001 for accessing over HTTPS                                     |
+| federatoraiDashboardFrontend.service.clusterIP                 | Specific cluster IP when service type is cluster IP. Use `None` for headless service                                               |
+| federatoraiDashboardFrontend.service.nodePort                  | Kubernetes Service nodePort if service type is `NodePort`                                                                          |
+| federatoraiDashboardFrontend.service.loadBalancerIP            | Load Balancer IP Adress if service type is `LoadBalancer`                                                                          |
+| federatoraiDashboardFrontend.service.loadBalancerSourceRanges  | Address that are allowed when svc is `LoadBalancer`                                                                                |
+| federatoraiDashboardFrontend.service.externalTrafficPolicy     | Enable client source IP preservation                                                                                               |
+| federatoraiDashboardFrontend.service.healthCheckNodePort       | Specifies the health check node port (numeric port number) for the service if `externalTrafficPolicy` is set to Local.             |
+| federatoraiDashboardFrontend.service.annotations               | Additional annotations for REST service                                                                                            |
+
+
+### federatoraiPostgresql Parameters
+
+| Parameter                                                        | Description                                      |
+| ---------------------------------------------------------------- | ------------------------------------------------ |
+| `federatoraiPostgresql.persistence.dataStorageSize`              | Persistent Volume Size for data storage          |
+
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
 
