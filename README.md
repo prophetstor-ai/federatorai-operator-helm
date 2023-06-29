@@ -72,11 +72,6 @@ helm ls --all-namespaces
 helm delete `my-name` --namespace=federatorai
 ```
 
-## To delete the Custom Resource Definitions (CRDs):
-```
-kubectl delete crd alamedaservices.federatorai.containers.ai
-```
-
 
 ## Configuration
 
@@ -98,7 +93,8 @@ Their default values and other configurable parameters are specified inside valu
 | global.commonLabels                                            | Common labels to be added to resources                                                                                             |
 | global.podAnnotations                                          | Annotations to be added to pods                                                                                                    |
 | global.podLabels                                               | Labels to be added to pods                                                                                                         |
-| global.resourcesEnabled                                        | Boolean to specify if you want to apply resources limits/requests settings                                                         |
+| global.resourcesLimitsEnabled                                  | Boolean to specify if you want to apply resources limits settings                                                                  |
+| global.resourcesRequestsEnabled                                | Boolean to specify if you want to apply resources requests settings                                                                |
 
 
 ### alamedaAi Parameters
@@ -106,6 +102,13 @@ Their default values and other configurable parameters are specified inside valu
 | Parameter                                                      | Description                                      |
 | -------------------------------------------------------------- | ------------------------------------------------ |
 | alamedaAi.persistence.dataStorageSize                          | Persistence storage size for data volume                                                                                           |
+
+
+### alamedaExecutor Parameters
+
+| Parameter                                                      | Description                                      |
+| -------------------------------------------------------------- | ------------------------------------------------ |
+| alamedaExecutor.enabled                                        | Enable deployment of alameda-executor            |
 
 
 ### alamedaInfluxdb Parameters
