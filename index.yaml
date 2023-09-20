@@ -29,6 +29,33 @@ entries:
     - federatorai-5.1.4.tgz
     version: 5.1.4
   - apiVersion: v2
+    appVersion: 5.1.4-2262
+    created: "2023-09-20T15:43:52.912193857+08:00"
+    description: Federator.ai helps enterprises optimize cloud resources, maximize
+      application performance, and save significant cost without excessive over-provisioning
+      or under-provisioning of resources, meeting the service-level requirements of
+      their applications.
+    digest: 4b6ca7874d70bcd27f9de353812da38e756fe7452967ecc07fbf532eb5b943df
+    home: https://www.prophetstor.com
+    icon: https://raw.githubusercontent.com/prophetstor-ai/public/master/images/logo.png
+    keywords:
+    - AI
+    - Resource Orchestration
+    - NoOps
+    - AIOps
+    - Intelligent Workload Management
+    - Cost Optimization
+    kubeVersion: '>= 1.16.0-0'
+    maintainers:
+    - email: support@prophetstor.com
+      name: ProphetStor Data Services, Inc.
+    name: federatorai
+    sources:
+    - https://www.prophetstor.com
+    urls:
+    - federatorai-5.1.4-2262.tgz
+    version: 5.1.4-2262
+  - apiVersion: v2
     appVersion: 5.1.3-ga
     created: "2023-08-10T09:44:00.526630443+08:00"
     description: Federator.ai helps enterprises optimize cloud resources, maximize
@@ -323,4 +350,4 @@ entries:
     urls:
     - federatorai-4.5.1.tgz
     version: 4.5.1
-generated: "2023-09-19T12:08:39.410949937+08:00"
+generated: "2023-09-20T15:43:52.831644386+08:00"
